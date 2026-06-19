@@ -543,7 +543,7 @@ class Dehydrator:
                 {"role": "user", "content": content[:5000]},
             ],
             max_tokens=2048,
-            temperature=0.0,
+            temperature=0.01,
         )
         if not response.choices:
             return []
